@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  background-color: #f2f2f2;
+}
+.login_box {
+  position: absolute;
+  width: 880px;
+  height: 480px;
+  top: 50%;
+  left: 50%;
+  /* margin: -240px auto 0 auto; */
+  margin-top: -240px;
+  margin-left: -440px;
+  background: #ffffff;
+  box-shadow: 0 0 23px -14px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0;
+}
+.login_left,
+.login_right {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  box-sizing: border-box;
+}
+.login_left {
+  width: 35%;
+  background: url('../img/login_bg.png') no-repeat;
+  background-size: cover;
+}
+.login_right {
+  position: relative;
+  width: 65%;
+}
+.login_inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.login_title {
+  color: #2c70f4;
+}
+.title_b {
+  font-size: 38px;
+}
+.title_m {
+  font-size: 22px;
+}
+.title_en {
+  font-family: AmericanTypewriter;
+}
+.login_opreate {
+  margin: 20px 0;
+}
+.login_opreate form > label {
+  display: block;
+  position: relative;
+  margin: 10px 0;
+}
+.login_input {
+  width: 100%;
+  padding: 10px 0 10px 80px;
+  background: #f9f9f9;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+}
+.login_con {
+  position: absolute;
+  height: 100%;
+  padding-left: 20px;
+}
+.con_title {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #2c3b50;
+  letter-spacing: -0.38px;
+  text-align: justify;
+}
+.l_icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 13px;
+  height: 100%;
+  margin-right: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.l_icon_account {
+  background-image: url('../img/login_account.png');
+}
+.l_icon_pass {
+  background-image: url('../img/login_pass.png');
+}
+.login_submit {
+  width: 100%;
+  height: 46px;
+  margin-top: 20px;
+  background: #2c70f4;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+.pass_show_con {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 16px;
+  width: 16px;
+  margin-top: -8px;
+  z-index: 100;
+  cursor: pointer;
+}
+.pass_show_con::before{
+  font-size: 16px;
+}
+.login_memoery {
+  text-align: left;
+}
+.login_memoery input {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.login_memoery span {
+  font-size: 12px;
+  color: #b8b8b8;
+  margin-left: 5px;
+}
+.memo_label {
+  position: relative;
+  display: inline-block;
+}
+.memo_label::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: -15px;
+  top: 50%;
+  margin-top: -7px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  line-height: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+#memo_check:checked + label::after {
+  content: '\2714';
+  color: #fff;
+  background-color: #2c70f4;
+}
+.ant-form-item-children {
+  display: block;
+}
+.login_opreate .ant-form-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+.login_opreate .ant-form-item-label {
+  position: absolute;
+  z-index: 10;
+  right: 19px;
+}
+.anticon-user::before {
+  font-size: 16px;
+}
+
+.login_opreate .ant-input-affix-wrapper {
+  height: 40px;
+}
+.login_opreate .ant-input-affix-wrapper .ant-input:not(:first-child) {
+  padding-left: 30px;
+  background-color: #f9f9f9;
+}
+/* .ant-form-item-required::before {
+  display: none;
+} */
+.login_opreate .ant-form-explain {
+  text-align: left;
+}

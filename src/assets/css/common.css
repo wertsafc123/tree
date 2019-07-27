@@ -1,0 +1,121 @@
+ul {
+  padding: 0;
+}
+body {
+  /* overflow: hidden; */
+}
+.clearfix::before {
+  content: '';
+  display: table;
+}
+
+.content-tip {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.k-content {
+  margin: 0px -5px;
+}
+.k-content .head {
+  margin: 0px 5px;
+  position: relative;
+  padding: 5px 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+
+  color: #1890ff;
+  font-weight: bold;
+  font-size: 16px;
+
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: white;
+}
+.k-content .head::after {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #dddddd;
+}
+.k-content .body {
+  margin: 0px 5px;
+  padding: 10px 15px;
+  min-height: calc(100vh - 60px - 10px - 48px);
+  background-color: white;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.drawer-bd {
+  padding-bottom: 53px;
+}
+.drawer-ft {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 16px;
+  text-align: right;
+  left: 0;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+}
+.form-info {
+  padding: 20px 15px;
+}
+.form-info .item {
+  display: flex;
+}
+.form-info .item > label {
+  margin-bottom: 1.5em;
+  width: 10em;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: right;
+}
+.form-info .item > p {
+  margin-left: 1em;
+  flex: 1;
+  word-break: break-all;
+}
+.action-ellipsis {
+  color: blue;
+}
+
+.list-filter{
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.list-filter .left{
+  float: left;
+}
+.list-filter .right{
+  float: right;
+}
+
+.maincont{
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  padding: 0 10px 10px 0;
+}

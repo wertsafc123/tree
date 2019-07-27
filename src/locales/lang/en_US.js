@@ -1,0 +1,131 @@
+export default {
+  title: 'WeMust Phone Book',
+  header: {
+    title: 'Phone Book',
+  },
+  menu: {
+    exit: 'Logout system',
+  },
+  base: {
+    create: 'New',
+    home: 'Home',
+    approval: 'Approval',
+    document: 'Memos',
+    apply: 'Application',
+    addressBook: 'Address book',
+
+    departmentEidt: 'Edit User',
+    actionSuccess: 'Success',
+    addTeam: 'Add Group',
+    editTeam: 'Edit Group',
+
+    contacts: 'Recent contacts',
+    note: 'The recipient and CC who sent the document are displayed on this page.',
+  },
+  tab: {
+    department: 'Dept',
+    team: 'My group',
+    contacts: 'Recent contacts',
+  },
+  action: {
+    exportTable: 'Export',
+    allClose: 'Collapse all',
+    allOpen: 'Expand all',
+    advancedSearch: 'Advanced Search',
+    search: 'Search',
+    clear: 'Clear',
+    edit: 'Edit',
+    addGroup: 'Add group',
+    del: 'Delete',
+    simpleSearch: 'Simple search',
+
+    save: 'Submit',
+    cancel: 'Cancel',
+  },
+  label: {
+    userName: 'Name',
+    nameZh: 'Chinese name',
+    nameEn: 'English name',
+    email: 'Email',
+    roomNo: 'Office No.',
+    extNo: 'Ext No.',
+    position: 'Position',
+    staffNo: 'Staff No.',
+    professional: 'Job Title',
+    action: 'Operation',
+
+    groupName: 'Chinese Group Name',
+    groupEnName: 'English Group Name',
+  },
+  placeholder: {
+    keyword: 'Please enter key words',
+    userName: 'Please enter the Chinese Name',
+    nameZh: 'Please enter the Chinese Name',
+    nameEn: 'Please enter the English Name',
+    email: 'Please type in the email.',
+    roomNo: 'Please type in the Office No.',
+    extNo: 'Please type in the Ext No.',
+    position: 'Please type in the position',
+    staffNo: 'Please type in the Staff No.',
+    professional: 'Please type in the job title.',
+
+    groupName: 'Please enter the Chinese Group Name',
+    groupEnName: 'Please enter the English Group Name',
+
+    application: 'Please enter the application name',
+  },
+  rule: {
+    keyword: 'Please enter key words',
+    name: 'Please enter the Chinese Name',
+    nameZh: 'Please enter the Chinese Name',
+    mobile: 'Please type in the Ext No.',
+
+    groupName: 'Please enter the Chinese Group Name',
+    groupEnName: 'Please enter the English Group Name',
+
+    email: 'Please enter the vaild email',
+    enName: 'Please enter the English Name',
+    selectPeople: 'No person was selected',
+  },
+  btns: {
+    clearAll: 'Clear',
+    confirm: 'Confirm',
+    cancel: 'Cancel',
+  },
+  tips: {
+    title: 'Remind',
+    export: 'Exproting',
+    advancedSearch: 'Please enter one item at least.',
+    noData: 'No data',
+    clear: 'Confirm empty the list?',
+    loading: 'Data loading, please operate later',
+    del: ' Confirm delete?',
+  },
+  approval: {
+    creater: 'Creator',
+    lastModify: 'Last edit time',
+    status: 'Status',
+    operate: 'Operation',
+    selected: 'Selected',
+    person: 'person',
+    search: 'search',
+  },
+  error: {
+    ajax: {
+      ERRCODE_UNKNOWN_ERROR: 'An unknown error has occurred',
+      ERRCODE_NOT_SUPPORT_ERROR: 'Not support',
+      ERRCODE_MAINTENANCE: 'The service is under maintenance, please try again later',
+      MISSING_FIELD: 'Missing field',
+      INVALID_FIELD: 'Invaild field',
+      INVAILD_FORMAT_ERROR: 'Invaild format of remote data',
+      INVAILD_USER_TYPE_ERROR: 'Invaild user type',
+      REQUEST_TIMEOUT_ERROR: 'Request timeout, please try again later',
+    },
+    tips: {
+      GROUP_NAME_OR_ENNAME_ALREADY_EXISTS: 'Chinese Group name existed/English Group name existed',
+    },
+  },
+  table: {
+    emptyText: 'No data',
+  },
+};
